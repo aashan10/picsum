@@ -1,0 +1,31 @@
+#!/bin/bash
+
+LOOP_COUNT=10
+
+HEIGHT=1024 #$((1+RANDOM % 4096));
+WIDTH=1024 #$((1 + RANDOM % 4096))
+
+
+if [ $# -ge 1 ];
+then
+        LOOP_COUNT="$1"
+fi
+
+for x in $(seq $LOOP_COUNT)
+do
+        FILE_NAME="picsum-$x-$WIDTH-$HEIGHT.png"
+        echo "Getting Image: $WIDTH x $HEIGHT"
+        $(wget -q -O "$FILE_NAME" https://picsum.photos/$WIDTH/$HEIGHT?random)
+        sleep 0.25
+done
+
+echo "Cleaning up empty files."
+
+for image in $(ls *.png)
+do
+        if ! [ -s $image ];
+        then
+                echo "Deleting $image."
+                $(rm $image)
+        fi
+done
