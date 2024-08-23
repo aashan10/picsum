@@ -2,7 +2,8 @@
 
 ### Installation
 
-Go to the release page and download the executable as per your operating system/cpu architecture.
+~~Go to the release page and download the executable as per your operating system/cpu architecture.~~
+For now, please build from source. Github actions need to be updated for linux and macos builds.
 
 #### Build from source
 To build from source, you must have rustc and cargo available on your machine.
