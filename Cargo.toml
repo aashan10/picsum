@@ -1,0 +1,11 @@
+[package]
+name = "picsum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = { version = "0.3.30" }
+homedir = "0.3.3"
+num_cpus = "1.16.0"
+reqwest = { version = "0.12.7", features = ["trust-dns"] }
+tokio = { version = "1.39.3", features = ["full"] }
