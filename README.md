@@ -1,6 +1,7 @@
 ## Picsum Downloader
 
 **Use Case** 
+
 Basically every project where you might need some kind of placeholder images whether to upload while testing or for basically anything else.
 You need a bunch of images of different sizes, probably of different resolutions. Well, there is a very cool application called [https://picsum.photos](https://picsum.photos) which does exactly that. This tool just helps you download those images to your local computer and you can test stuff locally.
 
