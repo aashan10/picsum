@@ -104,14 +104,19 @@ fn extract_from_peekable<T: std::str::FromStr>(
 }
 
 fn display_help() {
-    println!("Usage: picsum <number> --width <width> --height <height> --dir <directory> --threads <number>");
+    println!("Usage: picsum [<arg> <value>]");
     println!("  --count <number>        Number of images to download");
+    println!("                              default: 50");
     println!("  --width <number>        Width of image to be downloaded");
+    println!("                              default: 1920");
     println!("  --height <number>       Height of image to be downloaded");
+    println!("                              default: 1080");
     println!("  --dir <directory>       Directory to be used to save downloaded files");
+    println!("                              default: ~/Downloads");
     println!(
         "  --threads <number>      Allowed number of threads to be used for parallel downloads"
     );
+    println!("                              default: 4");
     println!("  --help                  Display this help message");
 }
 
