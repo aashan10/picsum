@@ -1,7 +1,9 @@
 [package]
 name = "picsum"
-version = "0.1.0"
+version = "0.1.4"
 edition = "2021"
+description = "A simple Rust library to fetch random images from Picsum."
+license = "MIT"
 
 [dependencies]
 futures = { version = "0.3.30" }
